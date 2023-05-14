@@ -1,0 +1,284 @@
+@font-face {
+    font-family: 'GhibliBold';
+    src: url('fonts/Ghibli-Font/Eyad\ Al-Samman\ -\ Ghibli-Bold.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'GhibliStandard';
+    src: url('fonts/Ghibli-Font/Eyad\ Al-Samman\ -\ Ghibli.otf') format('opentype');
+  }
+body{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+}
+
+.floating-image{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.container{
+    background-image: url(assets/background.jpg);
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    border-radius: 25px;
+    width: 90%;
+    height: 90vh;
+    
+}
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2); /* Adjust the opacity as needed */
+    background-size: cover;
+    z-index: 1;
+  }
+
+.main-text{
+    width: 50%;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.2); /* Adjust the color and opacity as desired */
+    backdrop-filter: blur(10px); /* Adjust the blur radius as desired */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    padding: 50px; /* Adjust the padding as needed */
+}
+.top-row{
+    display: flex;
+    justify-content: space-between;
+}
+.heading{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2.5em;
+    font-family: 'GhibliBold';
+}
+.introduction{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1.5em;
+    font-family: 'GhibliStandard';
+}
+
+.heading-group{
+
+}
+.sub-heading{
+    font-size: 1.6em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'GhibliBold';
+    color: rgba(248, 248, 28, 0.966);
+}
+
+/*--Button Styles--*/
+.btn-slice {
+	padding: 1.2rem 2.5rem;
+  border: 2px solid #ffffff;
+  height: 50%;
+	border-radius: 0rem;
+	color: #ffffff;
+	font-size: 0.6875rem;
+	font-weight: 700;
+	letter-spacing: 0.3rem;
+  position: relative;
+  min-width: max-content;
+  
+  -webkit-transition: all 1000ms cubic-bezier(0.890, 0, 0.140, 1); /* older webkit */
+  -webkit-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -moz-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -o-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); /* custom */
+
+  -webkit-transition-timing-function: cubic-bezier(0.890, 0, 0.140, 1); /* older webkit */
+  -webkit-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -moz-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -o-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); /* custom */
+}
+
+.btn-slice .top  {
+	position: relative;
+	height: 6px;
+	overflow: hidden;
+  top: 0;
+  -webkit-transition: all 300ms cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
+  -webkit-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -moz-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -o-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); /* custom */
+
+  -webkit-transition-timing-function: cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
+  -webkit-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -moz-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -o-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); /* custom */
+  
+  -webkit-transition-delay:0.35s;     
+  -moz-transition-delay::0.35s; 
+  -ms-transition-delay::0.35s;     
+  -o-transition-delay::0.35s;     
+  transition-delay::0.35s;
+}
+
+.btn-slice .bottom  {
+	position: relative;
+	height: 6px;
+	overflow: hidden;
+  bottom: 0;
+  -webkit-transition: all 300ms cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
+  -webkit-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -moz-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -o-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); /* custom */
+
+  -webkit-transition-timing-function: cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
+  -webkit-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -moz-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -o-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); /* custom */
+  
+  -webkit-transition-delay:0.35s;     
+  -moz-transition-delay::0.35s; 
+  -ms-transition-delay::0.35s;     
+  -o-transition-delay::0.35s;     
+  transition-delay::0.35s;
+}
+
+.btn-slice .bottom span {
+  top: -6px;
+  position: absolute;
+  left: 0;
+}
+
+.btn-slice:hover .top {
+	top: -5px;
+  -webkit-transition-delay:0.35s;     
+  -moz-transition-delay::0.35s; 
+  -ms-transition-delay::0.35s;     
+  -o-transition-delay::0.35s;     
+  transition-delay::0.35s; 
+}
+
+.btn-slice:hover .bottom {
+	bottom: -5px;
+  -webkit-transition-delay:0.35s;     
+  -moz-transition-delay::0.35s; 
+  -ms-transition-delay::0.35s;     
+  -o-transition-delay::0.35s;     
+  transition-delay::0.35s; 
+}
+.btn-slice:hover, .btn-slice:focus, .btn-slice:active {
+	margin-left: 10px;
+}
+.btn-slice:before{
+	content: '';
+	height: 1px;
+	width: 60px;
+	background-color: #ffffff;
+	position: absolute;
+	margin-top: 6px;
+	right: -35px;
+  
+  -webkit-transition: all 1000ms cubic-bezier(0.890, 0, 0.140, 1); /* older webkit */
+  -webkit-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -moz-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -o-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); /* custom */
+
+  -webkit-transition-timing-function: cubic-bezier(0.890, 0, 0.140, 1); /* older webkit */
+  -webkit-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -moz-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -o-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); /* custom */
+}
+.btn-slice:hover:before{
+	width: 130%;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* Additional styles for the div */
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+    margin-right: 10px; /* Adjust the spacing between icons as needed */
+    /* Additional styles for the anchor tag */
+  }
+  
+  .social-icons img {
+    filter: brightness(0) invert(1); /* Change image colors to white */
+    width: 60px; /* Adjust the icon size as needed */
+    height: 60px; /* Adjust the icon size as needed */
+    transition: filter 0.2s ease; /* Add transition effect */
+  }
+
+  .social-icons img:hover {
+    filter: brightness(0) invert(1) sepia(100%) saturate(500%); /* Apply gradient transition effect */
+  }
+
+
+  .card {
+    width: 30%;
+    height: max-content;
+    z-index: 3;
+    color: rgb(255, 255, 255);
+    font-family: 'GhibliStandard';
+    background-color: rgba(255, 255, 255, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    /* Additional styles for the card */
+  }
+  @media only screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+  }
+  .card-title {
+    font-family: 'GhibliBold';
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* Additional styles for the title */
+  }
+  
+  .card-description {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    /* Additional styles for the description */
+  }
+
+  .project-heading{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2.5em;
+    font-family: 'GhibliBold';
+    color: white;
+    flex-basis: 100%;
+    padding-left: 30px;
+    width: 100%;
+    margin: auto;
+    z-index: 2;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+ 
