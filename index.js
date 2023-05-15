@@ -8,9 +8,9 @@ pdfButton.addEventListener("click",()=>{
 })
 
 window.onblur = function() { 
-    document.title("HEY COME BACK HERE !")
+    document.title = "HEY COME BACK HERE !"
 }
 window.onfocus = function(){
-    document.title("Khalil Rezgui's portfolio")
+    document.title = "Khalil Rezgui's portfolio"
 
 }
