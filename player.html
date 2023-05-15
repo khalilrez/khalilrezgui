@@ -12,13 +12,27 @@
   </audio>
 
   <a href="#" class="play-music-link">
-    <i class="fas fa-play"></i>
+    <i class="fas fa-play" id="button"></i>
   </a>
   <script>
+    function isPlaying(audelem) { return !audelem.paused; }
+    var btn = document.getElementById('button');
     document.addEventListener('click', function() {
   var myAudio = document.getElementById('backgroundMusic');
+  if(!isPlaying(myAudio)){
   myAudio.play();
+  btn.classList.remove("fa-play");
+  btn.classList.add("fa-pause");
+    return 0;
+}else{
+  myAudio.pause();
+  btn.classList.add("fa-play");
+  btn.classList.remove("fa-pause");
+  return 0;
+  }
 });
+
+
   </script>
 </body>
 </html>
