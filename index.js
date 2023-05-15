@@ -6,3 +6,11 @@ pdfButton.addEventListener("click",()=>{
     link.download = "khalil_rezgui_cv.pdf";
     link.dispatchEvent(new MouseEvent('click'));
 })
+
+window.onblur = function() { 
+    document.title("HEY COME BACK HERE !")
+}
+window.onfocus = function(){
+    document.title("Khalil Rezgui's portfolio")
+
+}
