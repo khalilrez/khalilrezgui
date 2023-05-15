@@ -293,7 +293,8 @@ body{
  
   #audioPlayer {
     position: absolute;
-    bottom: 0;
+    top: 0;
+    width: 50px;
     right: 10px;
     z-index: 5;
     border: none;
