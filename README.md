@@ -32,7 +32,7 @@ Here, I outline my technical skills, including programming languages, frameworks
 - ☎️ Phone: [+216 92 428 859](tel:+21692428859)
 - 💼 LinkedIn: [Khalil Rezgui](https://www.linkedin.com/in/khalil-rezgui)
 - 📸 Instagram: [@Khalil_rz](https://www.instagram.com/khalil_rz)
-- 📘 Facebook: [Khalil Rezgui](https://www.facebook.com/khalil69)
+- 📘 Facebook: [Khalil Rezgui](https://www.facebook.com/Khalil.rezgui69)
 
 ## License
 
