@@ -12,7 +12,7 @@ Welcome to my portfolio repository! This project showcases my projects, skills, 
 
 I am a passionate and dedicated cloud engineering student with a strong interest in building scalable and reliable cloud infrastructure solutions. With a solid foundation in cloud computing principles and technologies, I strive to leverage my skills to drive innovation and optimize cloud-based systems.
 
-## link
+## Link
 
 [Click Here](khalilrez.github.io/khalilrezgui/)
 
