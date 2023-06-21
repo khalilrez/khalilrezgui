@@ -2,8 +2,8 @@ import { BrowserRouter } from "react-router-dom";
 
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 import ReactSound from "react-sound";
-import LoFi from "./assets/lofi.mp3"
 import { useState } from "react";
+import { LoFi } from "./assets";
 const App = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
