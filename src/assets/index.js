@@ -31,11 +31,14 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import portsniffer from "./portsniffer.jpg";
 import fastapi from "./fastapi.png";
+import resume from "./Khalil_Rezgui_CV.pdf";
+
 
 
 
 
 export {
+  resume,
   portsniffer,
   logo,
   backend,
