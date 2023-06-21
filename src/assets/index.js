@@ -32,12 +32,16 @@ import tripguide from "./tripguide.png";
 import portsniffer from "./portsniffer.jpg";
 import fastapi from "./fastapi.png";
 import resume from "./Khalil_Rezgui_CV.pdf";
+import calculator from "./calculator.png";
+import medimmo from "./medimmo.png";
 
 
 
 
 
 export {
+  calculator,
+  medimmo,
   resume,
   portsniffer,
   logo,

@@ -25,6 +25,8 @@ import {
   portsniffer,
   threejs,
   fastapi,
+  calculator,
+  medimmo,
 } from "../assets";
 
 export const navLinks = [
@@ -311,6 +313,44 @@ const projects = [
     ],
     image: fastapi,
     source_code_link: "https://github.com/khalilrez/food-log-api",
+  },
+  {
+    name: "Python GUI Calculator",
+    description:
+      "One of my first python application. A GUI calculator.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tk GUI toolkit",
+        color: "green-text-gradient",
+      }
+    ],
+    image: calculator,
+    source_code_link: "https://github.com/khalilrez/pythonGUICalculator",
+  },
+  {
+    name: "MedImmo - Real Estate Agency",
+    description:
+      "A real estate agency website that I developed from scratch. This website serves as a comprehensive platform for property buyers .",
+    tags: [
+      {
+        name: "HTML/CSS/JS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "PHP",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MySQL",
+        color: "green-text-gradient",
+      }
+    ],
+    image: medimmo,
+    source_code_link: "http://www.med-immo.tn/index.php",
   },
 ];
 
