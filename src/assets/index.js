@@ -34,7 +34,7 @@ import fastapi from "./fastapi.png";
 import resume from "./Khalil_Rezgui_CV.pdf";
 import calculator from "./calculator.png";
 import medimmo from "./medimmo.png";
-import LoFi from "./assets/lofi.mp3"
+import LoFi from "./lofi.mp3"
 
 
 
