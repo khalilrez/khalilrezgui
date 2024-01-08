@@ -13,7 +13,7 @@ const Tech = () => {
         </div>
       ))}
       {technologies.map((technology) => (
-  <div class="center relative inline-block select-none whitespace-nowrap rounded-lg bg-amber-500 py-2 px-3.5 align-baseline font-sans text-xs font-bold uppercase leading-none text-black">
+  <div class="block lg:hidden center relative inline-block select-none whitespace-nowrap rounded-lg bg-amber-500 py-2 px-3.5 align-baseline font-sans text-xs font-bold uppercase leading-none text-black">
     <div class="mt-px">{technology.name}</div>
   </div>))}
     </div>
