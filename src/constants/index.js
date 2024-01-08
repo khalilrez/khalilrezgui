@@ -72,11 +72,11 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
+    name: "Kubernetes",
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: "Linux",
     icon: css,
   },
   {
@@ -84,7 +84,7 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
+    name: "Spring",
     icon: typescript,
   },
   {
@@ -92,11 +92,11 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
+    name: "ELK Stack",
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
+    name: "CI/CD",
     icon: tailwind,
   },
   {
@@ -108,7 +108,7 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
+    name: "PostgreSQL",
     icon: threejs,
   },
   {
@@ -116,7 +116,7 @@ const technologies = [
     icon: git,
   },
   {
-    name: "figma",
+    name: "Angular",
     icon: figma,
   },
   {
