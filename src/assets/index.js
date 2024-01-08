@@ -34,6 +34,16 @@ import fastapi from "./fastapi.png";
 import resume from "./Khalil_Rezgui_CV.pdf";
 import calculator from "./calculator.png";
 import medimmo from "./medimmo.png";
+import jenkins from "./jenkins.png";
+
+import arch from "./archlinux.png";
+import sysadmin from "./sysadmin.jpg";
+import cpp from "./cpp.png";
+import etl from "./etl.png";
+import utilities from "./utilities.png";
+
+
+
 import LoFi from "./lofi.mp3"
 
 
@@ -41,6 +51,10 @@ import LoFi from "./lofi.mp3"
 
 
 export {
+  utilities,
+  sysadmin,
+  etl,
+  cpp,
   LoFi,
   calculator,
   medimmo,
@@ -63,6 +77,7 @@ export {
   mongodb,
   nodejs,
   reactjs,
+  jenkins,
   redux,
   tailwind,
   typescript,
