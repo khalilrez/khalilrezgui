@@ -21,7 +21,7 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 1.6 : 2}
+        scale={isMobile ? 1.3 : 1.8}
         position={isMobile ? [0, -3, -0.5] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
@@ -54,7 +54,7 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    <Canvas
+    <Canvas className="hidden lg:block"
       frameloop='demand'
       shadows
       dpr={[1, 2]}
@@ -67,7 +67,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile} />
+        <Computers />
       </Suspense>
 
       <Preload all />
