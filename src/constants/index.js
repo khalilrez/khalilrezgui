@@ -129,7 +129,7 @@ const experiences = [
   {
     title: "Software/Cloud Engineer",
     company_name: "Amen Bank",
-    icon: starbucks,
+    icon: shopify,
     iconBg: "#383E56",
     date: "Jul 2022 - Aug 2022",
     points: [
